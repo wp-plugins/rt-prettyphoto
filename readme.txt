@@ -15,9 +15,10 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 
 This plugin will automatic add lightbox in wordpress post/page without disturbance.
 
-### Plugin Features
+= Features =
 * Easy to use.
 * Support Images, Youtube Video, Vimeo video, iFrame, DEV. 
+* For image not need to add rel
 
 
 = More =
@@ -33,6 +34,29 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Add Images as like you upload (with media link)
 
+
+### Examples:
+
+= To add a Single Video =
+`<a href="Full Video Link" rel="prettyPhoto" ><img src="Full Thumbnial Path" alt=""/></a>`
+
+= To add video with default image gallery =
+`<a href="Full Video Link" rel="prettyPhoto[Your_Post_ID]" ><img src="Full Thumbnial Path" alt=""/></a>`
+If you post ID is 708 rel should rel="prettyPhoto[708]".
+
+= Aditional Gallery with Image, Youtube Video, Vimeo Video or DIV =
+`<div id="complexgallery">
+	<a href="Internal or External Full Image Link" rel="prettyPhoto[galleryname]"><img src="Full Thumbnial Path" alt=""/></a>
+	<a href="Youtube Full Video Link" rel="prettyPhoto[galleryname]"><img src="Full Thumbnial Path" alt=""/></a>
+	<a href="Vimeo Full Video Link" rel="prettyPhoto[galleryname]"><img src="Full Thumbnial Path" alt=""/></a>
+	<a href="#DIV_ID_NAME" rel="prettyPhoto[galleryname]"><img src="Full Thumbnial Path" alt=""/></a>
+	<a href="#DIV_ID_NAME" rel="prettyPhoto[galleryname]">Text for Link</a>
+</div>`
+For DIV you should add a div like below.
+`<div id="DIV_ID_NAME" style="display:none">
+<p>This is inline DEV content for prettyPhoto.</p>
+<p>Your DIV full conent here.</p><p>Your DIV full conent here.</p><p>Your DIV full conent here.</p><p>Your DIV full conent here.</p></div>
+</div>`
 
 
 == Frequently asked questions ==
