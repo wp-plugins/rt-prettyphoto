@@ -15,13 +15,13 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 
 This plugin will automatic add lightbox in wordpress post/page without disturbance.
 
-= Features =
+### Features
 * Easy to use.
 * Support Images, Youtube Video, Vimeo video, iFrame, DEV. 
 * For image not need to add rel
 
 
-= More =
+### More
 * Thank you for using our plugin.
 * Vist the [blog post](http://royaltechbd.com/rt-prettyphoto/) to know more.
 * [Give a Rating & Write a Review](http://goo.gl/3lNO1R)
