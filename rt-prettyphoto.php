@@ -77,12 +77,12 @@ function royal_prettyphoto_activate_plugin() {
 	$royal_prettyphoto_plugin_options = array(		
 		'font_family'      => '"Righteous", cursive',
 		'text_color'       => '#FFFFFF',
-		'show_photo_control' => '0',
-		'show_photo_title' => '0',
-		'show_social_icons' => '0',
-		'show_photo_thumbnial' => '0',
-		'show_photo_nav_arrow' => '0',
-		'show_photo_expand_button' => '0'
+		'show_photo_control' => '1',
+		'show_photo_title' => '1',
+		'show_social_icons' => '1',
+		'show_photo_thumbnial' => '1',
+		'show_photo_nav_arrow' => '1',
+		'show_photo_expand_button' => '1'
 		
 		
 		);
@@ -125,7 +125,7 @@ if ( is_admin() ){ // admin actions and filters
 		// hook to get option values and dynamically render css to support the tab classes
 		add_action( 'wp_head', 'royal_prettyphoto_custom_css_hook' );
 
-		// hook to get option values and write the div for the Royal Side Button to display
+		// hook to get option values and write the div for the Royal PrettyPhoto to display
 		add_action( 'wp_footer', 'royal_prettyphoto_body_tag_html' );
 	}
 }
@@ -160,7 +160,7 @@ function royal_prettyphoto_farbtastic_script($hook) {
 
 
 
-// action function to get option values and write the div for the Royal Side Button to display
+// action function to get option values and write the div for the Royal PrettyPhoto to display
 function royal_prettyphoto_body_tag_html() {
 
 	// get plugin option array and store in a variable
@@ -184,7 +184,7 @@ function royal_prettyphoto_body_tag_html() {
 function royal_prettyphoto_admin_menu() {
 
 	// Add a new submenu under Settings
-	add_options_page( 'Royal Side Button Option Settings', 'Royal Side Button', 'manage_options', 'royal_pretty_photo', 'royal_prettyphoto_options_page' );
+	add_options_page( 'Royal PrettyPhoto Option Settings', 'Royal PrettyPhoto', 'manage_options', 'royal_pretty_photo', 'royal_prettyphoto_options_page' );
 }
 
 
@@ -340,7 +340,7 @@ function royal_prettyphoto_admin_plugin_actions($links) {
 
 
 
-// This function runs all the css and dynamic css elements for displaying the Royal Side Button
+// This function runs all the css and dynamic css elements for displaying the Royal PrettyPhoto
 function royal_prettyphoto_custom_css_hook() {
 
 	// get plugin option array and store in a variable
