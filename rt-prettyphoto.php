@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Royal PrettyPhoto
-Plugin URI: httphttp://wordpress.org/plugins/wp-prettyphoto
+Plugin URI: http://wordpress.org/plugins/wp-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
 Author: Mehdi Akram
 Author URI: http://shamokaldarpon.com

@@ -1,7 +1,7 @@
-=== PPM Lightbox ===
+=== Royal PrettyPhoto ===
 Contributors: royaltechbd
-Donate link: 
-Tags: jQuery Lightbox, jQuery PrettyPhoto, Lightbox
+Donate link: http://royaltechbd.com/donate.html
+Tags: jQuery Lightbox, jQuery, jQuery PrettyPhoto, Lightbox, PrettyPhoto
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 1.0
@@ -18,6 +18,12 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 ### Plugin Features
 * Easy to use.
 * Support Images, Youtube Video, Vimeo video, iFrame, DEV. 
+
+
+= More =
+* Thank you for using our plugin.
+* Vist the [blog post](http://royaltechbd.com/rt-prettyphoto/) to know more.
+* [Give a Rating & Write a Review](http://goo.gl/3lNO1R)
 
 
 == Installation ==
