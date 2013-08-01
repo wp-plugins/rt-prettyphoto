@@ -4,7 +4,7 @@ Donate link: http://royaltechbd.com/donate.html
 Tags: jQuery Lightbox, jQuery, jQuery PrettyPhoto, Lightbox, PrettyPhoto
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,15 +67,19 @@ No, Just add photo, It autometic add rel="".
 
 
 == Screenshots ==
-1. Royal PrettyPhoto in action.
+1. Royal PrettyPhoto Seetings.
+2. Royal PrettyPhoto in action.
 
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Add Seetings
+
+= 1.0.0 =
 * Initial release
 
 
 == Upgrade notice ==
-= 1.0 =
+= 1.0.0 =
 It is Initial release
