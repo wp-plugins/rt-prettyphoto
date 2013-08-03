@@ -28,8 +28,8 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 
 
 ### Special Thanks
-* [No Margin For Errors](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/)
-* [Rasel Ahmed](http://rrfoundation.net/)
+* [No Margin For Errors](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone)
+* [Rasel Ahmed](http://rrfoundation.net)
 
 == Installation ==
 
