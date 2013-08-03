@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/plugins/rt-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
 Author: Mehdi Akram
 Author URI: http://shamokaldarpon.com
-Version: 1.0.1
+Version: 1.0.2
 */
 
 

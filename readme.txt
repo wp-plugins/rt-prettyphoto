@@ -1,10 +1,10 @@
-=== Royal PrettyPhoto ===
+=== Plugin Name ===
 Contributors: royaltechbd
 Donate link: http://royaltechbd.com/donate.html
 Tags: jQuery Lightbox, jQuery, jQuery PrettyPhoto, Lightbox, PrettyPhoto
 Requires at least: 3.3
-Tested up to: 3.5.2
-Stable tag: 1.0.1
+Tested up to: 3.6
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,10 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 * Vist the [blog post](http://royaltechbd.com/rt-prettyphoto/) to know more.
 * [Give a Rating & Write a Review](http://goo.gl/3lNO1R)
 
+
+### Special Thanks
+* [No Margin For Errors](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/)
+* [Rasel Ahmed](http://rrfoundation.net/)
 
 == Installation ==
 
