@@ -76,15 +76,13 @@ function royal_prettyphoto_activate_plugin() {
 	// populate plugin options array
 	$royal_prettyphoto_plugin_options = array(		
 		'font_family'      => '"Righteous", cursive',
-		'text_color'       => '#FFFFFF',
+		'text_color'       => '#ffffff',
 		'hide_photo_control' => '0',
 		'hide_photo_title' => '0',
 		'hide_social_icons' => '0',
 		'hide_photo_thumbnial' => '0',
 		'hide_photo_nav_arrow' => '0',
-		'hide_photo_expand_button' => '0'
-		
-		
+		'hide_photo_expand_button' => '0'	
 		);
 
 	// create field in WP_options to store all plugin data in one field
@@ -302,12 +300,6 @@ function royal_prettyphoto_options_page() {
 		<td><input name="royal_prettyphoto_plugin_options[hide_photo_nav_arrow]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_nav_arrow); ?> /></td>
 		</tr>
 		
-		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_hide_photo_expand_button">Hide Photo Expand Button</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[hide_photo_expand_button]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_expand_button); ?> /></td>
-		</tr>
-
-
 	</table>
 
 	<p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></p>
@@ -425,7 +417,7 @@ a.pp_next, a.pp_previous
 }
 
 
-div.pp_default .pp_expand, .pp_expand, a.pp_expand
+div.pp_default .pp_expand, a.pp_expand, div.facebook .pp_expand, div.light_square .pp_expand, div.dark_square .pp_expand, div.dark_rounded .pp_expand, div.light_rounded .pp_expand
 {
 	<?php
 	if ( $royal_prettyphoto_hide_photo_Expand_button =='1' ) :
