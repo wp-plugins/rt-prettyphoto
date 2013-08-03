@@ -77,12 +77,12 @@ function royal_prettyphoto_activate_plugin() {
 	$royal_prettyphoto_plugin_options = array(		
 		'font_family'      => '"Righteous", cursive',
 		'text_color'       => '#FFFFFF',
-		'show_photo_control' => '1',
-		'show_photo_title' => '1',
-		'show_social_icons' => '1',
-		'show_photo_thumbnial' => '1',
-		'show_photo_nav_arrow' => '1',
-		'show_photo_expand_button' => '1'
+		'hide_photo_control' => '0',
+		'hide_photo_title' => '0',
+		'hide_social_icons' => '0',
+		'hide_photo_thumbnial' => '0',
+		'hide_photo_nav_arrow' => '0',
+		'hide_photo_expand_button' => '0'
 		
 		
 		);
@@ -213,12 +213,12 @@ function royal_prettyphoto_options_page() {
 	// fetch individual values from the plugin option variable array
 	$royal_prettyphoto_font_family			= $royal_prettyphoto_plugin_option_array[ 'font_family' ];
 	$royal_prettyphoto_text_color			= $royal_prettyphoto_plugin_option_array[ 'text_color' ];
-	$royal_prettyphoto_show_photo_title		= $royal_prettyphoto_plugin_option_array[ 'show_photo_title' ];
-	$royal_prettyphoto_show_photo_control	= $royal_prettyphoto_plugin_option_array[ 'show_photo_control' ];
-	$royal_prettyphoto_show_social_icons	= $royal_prettyphoto_plugin_option_array[ 'show_social_icons' ];
-	$royal_prettyphoto_show_photo_thumbnial	= $royal_prettyphoto_plugin_option_array[ 'show_photo_thumbnial' ];
-	$royal_prettyphoto_show_photo_nav_arrow	= $royal_prettyphoto_plugin_option_array[ 'show_photo_nav_arrow' ];
-	$royal_prettyphoto_show_photo_expand_button	= $royal_prettyphoto_plugin_option_array[ 'show_photo_expand_button' ];
+	$royal_prettyphoto_hide_photo_title		= $royal_prettyphoto_plugin_option_array[ 'hide_photo_title' ];
+	$royal_prettyphoto_hide_photo_control	= $royal_prettyphoto_plugin_option_array[ 'hide_photo_control' ];
+	$royal_prettyphoto_hide_social_icons	= $royal_prettyphoto_plugin_option_array[ 'hide_social_icons' ];
+	$royal_prettyphoto_hide_photo_thumbnial	= $royal_prettyphoto_plugin_option_array[ 'hide_photo_thumbnial' ];
+	$royal_prettyphoto_hide_photo_nav_arrow	= $royal_prettyphoto_plugin_option_array[ 'hide_photo_nav_arrow' ];
+	$royal_prettyphoto_hide_photo_expand_button	= $royal_prettyphoto_plugin_option_array[ 'hide_photo_expand_button' ];
 
 ?>
 
@@ -272,39 +272,39 @@ function royal_prettyphoto_options_page() {
 		</tr>
 
 		<tr valign="top">
-		<th width="33%" scope="row"><label for="royal_prettyphoto_show_photo_title">Show Photo Title</label></th>
-		<td ><input name="royal_prettyphoto_plugin_options[show_photo_title]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_photo_title ); ?> /></td>
+		<th width="33%" scope="row"><label for="royal_prettyphoto_hide_photo_title">Hide Photo Title</label></th>
+		<td ><input name="royal_prettyphoto_plugin_options[hide_photo_title]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_title ); ?> /></td>
 		</tr>		
 		
 		<tr valign="top">
-			<th scope="row"><label for="royal_prettyphoto_text_color">Text color</label></th>
+			<th scope="row"><label for="royal_prettyphoto_text_color">Text color (Default #FFFFFF)</label></th>
 			<td><input type="text" maxlength="7" size="6" value="<?php echo esc_attr( $royal_prettyphoto_text_color ); ?>" name="royal_prettyphoto_plugin_options[text_color]" id="color1" />
 			<div id="colorpicker1"></div></td>
 		</tr>
 		
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_show_photo_control">Show Photo Control</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[show_photo_control]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_photo_control); ?> /></td>
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_control">Hide Photo Control</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_photo_control]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_control); ?> /></td>
 		</tr>
 		
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_show_social_icons">Show Social Icons</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[show_social_icons]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_social_icons); ?> /></td>
+		<th scope="row"><label for="royal_prettyphoto_hide_social_icons">Hide Social Icons</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_social_icons]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_social_icons); ?> /></td>
 		</tr>
 
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_show_photo_thumbnial">Show Photo Thumbnial</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[show_photo_thumbnial]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_photo_thumbnial); ?> /></td>
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_thumbnial">Hide Photo Thumbnial</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_photo_thumbnial]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_thumbnial); ?> /></td>
 		</tr>
 		
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_show_photo_nav_arrow">Show Photo Nav Arrow</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[show_photo_nav_arrow]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_photo_nav_arrow); ?> /></td>
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_nav_arrow">Hide Photo Nav Arrow</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_photo_nav_arrow]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_nav_arrow); ?> /></td>
 		</tr>
 		
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_show_photo_expand_button">Show Photo Expand Button</label></th>
-		<td><input name="royal_prettyphoto_plugin_options[show_photo_expand_button]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_show_photo_expand_button); ?> /></td>
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_expand_button">Show Photo Expand Button</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_photo_expand_button]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_expand_button); ?> /></td>
 		</tr>
 
 
@@ -349,12 +349,12 @@ function royal_prettyphoto_custom_css_hook() {
 	// fetch individual values from the plugin option variable array
 	$royal_prettyphoto_font_family				= $royal_prettyphoto_plugin_option_array[ 'font_family' ];	
 	$royal_prettyphoto_text_color				= $royal_prettyphoto_plugin_option_array[ 'text_color' ];
-	$royal_prettyphoto_show_photo_title			= $royal_prettyphoto_plugin_option_array[ 'show_photo_title' ];
-	$royal_prettyphoto_show_photo_control		= $royal_prettyphoto_plugin_option_array[ 'show_photo_control' ];
-	$royal_prettyphoto_show_social_icons		= $royal_prettyphoto_plugin_option_array[ 'show_social_icons' ];
-	$royal_prettyphoto_show_photo_thumbnial		= $royal_prettyphoto_plugin_option_array[ 'show_photo_thumbnial' ];
-	$royal_prettyphoto_show_photo_nav_arrow		= $royal_prettyphoto_plugin_option_array[ 'show_photo_nav_arrow' ];
-	$royal_prettyphoto_show_photo_expand_button	= $royal_prettyphoto_plugin_option_array[ 'show_photo_expand_button' ];
+	$royal_prettyphoto_hide_photo_title			= $royal_prettyphoto_plugin_option_array[ 'hide_photo_title' ];
+	$royal_prettyphoto_hide_photo_control		= $royal_prettyphoto_plugin_option_array[ 'hide_photo_control' ];
+	$royal_prettyphoto_hide_social_icons		= $royal_prettyphoto_plugin_option_array[ 'hide_social_icons' ];
+	$royal_prettyphoto_hide_photo_thumbnial		= $royal_prettyphoto_plugin_option_array[ 'hide_photo_thumbnial' ];
+	$royal_prettyphoto_hide_photo_nav_arrow		= $royal_prettyphoto_plugin_option_array[ 'hide_photo_nav_arrow' ];
+	$royal_prettyphoto_hide_photo_expand_button	= $royal_prettyphoto_plugin_option_array[ 'hide_photo_expand_button' ];
 
 ?>
 
@@ -365,10 +365,10 @@ function royal_prettyphoto_custom_css_hook() {
 
 div.ppt {
 	<?php
-	if ( $royal_prettyphoto_show_photo_title =='1' ) :
-	  echo 'display: none;' . "\n";
+	if ( $royal_prettyphoto_hide_photo_title =='1' ) :
+	  echo 'display: none!important;' . "\n";
 	else :
-	  echo ' display: none !important;' . "\n";
+	  echo ' display: none;' . "\n";
 	endif;
 	?>
 }
@@ -376,10 +376,10 @@ div.ppt {
 
 .pp_nav {
 	<?php
-	if ( $royal_prettyphoto_show_photo_control =='1' ) :
-	  
-	else :
+	if ( $royal_prettyphoto_hide_photo_control =='1' ) :
 	  echo ' display: none !important;' . "\n";
+	else :
+	  
 	endif;
 	?> 
 }
@@ -387,10 +387,10 @@ div.ppt {
 
 .pp_social {
 	<?php
-	if ( $royal_prettyphoto_show_social_icons =='1' ) :
-	  
-	else :
+	if ( $royal_prettyphoto_hide_social_icons =='1' ) :
 	  echo ' display: none !important;' . "\n";
+	else :
+	  
 	endif;
 	?> 
 }
@@ -398,10 +398,10 @@ div.ppt {
 
 .pp_gallery {
 	<?php
-	if ( $royal_prettyphoto_show_photo_thumbnial =='1' ) :
-	  
-	else :
+	if ( $royal_prettyphoto_hide_photo_thumbnial =='1' ) :
 	  echo ' display: none !important;' . "\n";
+	else :
+	  
 	endif;
 	?> 
 }
@@ -416,10 +416,10 @@ div.ppt{
 a.pp_next, a.pp_previous 
 {
 	<?php
-	if ( $royal_prettyphoto_show_photo_nav_arrow =='1' ) :
-	  
-	else :
+	if ( $royal_prettyphoto_hide_photo_nav_arrow =='1' ) :
 	  echo ' display: none !important;' . "\n";
+	else :
+	  
 	endif;
 	?> 
 }
@@ -428,10 +428,10 @@ a.pp_next, a.pp_previous
 .pp_expand
 {
 	<?php
-	if ( $royal_prettyphoto_show_photo_Expand_button =='1' ) :
-	  
-	else :
+	if ( $royal_prettyphoto_hide_photo_Expand_button =='1' ) :
 	  echo ' display: none !important;' . "\n";
+	else :
+	  
 	endif;
 	?> 
 }
