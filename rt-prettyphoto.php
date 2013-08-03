@@ -425,7 +425,7 @@ a.pp_next, a.pp_previous
 }
 
 
-div.pp_default .pp_expand
+div.pp_default .pp_expand, .pp_expand, a.pp_expand
 {
 	<?php
 	if ( $royal_prettyphoto_hide_photo_Expand_button =='1' ) :

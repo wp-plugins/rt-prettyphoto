@@ -70,17 +70,14 @@ For DIV you should add a div like below.
 
 
 = iframe =
-
 `
-<a href="http://www.google.com?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]" title="Google.com opened at 100%">Google.com</a>
-<a href="http://www.apple.com?iframe=true&width=500&height=250" rel="prettyPhoto[iframes]">Apple.com</a>
-<a href="http://www.twitter.com?iframe=true&width=400&height=200" rel="prettyPhoto[iframes]">Twitter.com</a>
+<a href="http://royaltechbd.com/?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]" title="royaltechbd.com opened at 100%">royaltechbd.com</a>
+<a href="http://shamokaldarpon.com/?iframe=true&width=500&height=250" rel="prettyPhoto[iframes]">shamokaldarpon.com</a>
 `
-
 
 
 = Flash content =
-`<a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=792&amp;height=294" rel="prettyPhoto[flash]" title="Flash">
+`<a href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" rel="prettyPhoto[flash]" title="Flash">
 <img src="Full Thumbnial Path" alt="Flash content" /></a>
 `
 
