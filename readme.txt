@@ -20,6 +20,12 @@ This plugin will automatic add lightbox in wordpress post/page without disturban
 * Support Images, Youtube Video, Vimeo video, iFrame, DEV. 
 * For image not need to add rel
 
+### Browser support
+* Firefox 3.0+ Google 
+* Chrome 10.0+ 
+* Internet Explorer 6.0+ 
+* Safari 3.1.1+ 
+* Opera 9+
 
 ### More
 * Thank you for using our plugin.
@@ -61,6 +67,28 @@ For DIV you should add a div like below.
 <p>This is inline DEV content for prettyPhoto.</p>
 <p>Your DIV full conent here.</p><p>Your DIV full conent here.</p><p>Your DIV full conent here.</p><p>Your DIV full conent here.</p></div>
 </div>`
+
+
+= iframe =
+
+`
+<a href="http://www.google.com?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]" title="Google.com opened at 100%">Google.com</a>
+<a href="http://www.apple.com?iframe=true&width=500&height=250" rel="prettyPhoto[iframes]">Apple.com</a>
+<a href="http://www.twitter.com?iframe=true&width=400&height=200" rel="prettyPhoto[iframes]">Twitter.com</a>
+`
+
+
+
+= Flash content =
+`<a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=792&amp;height=294" rel="prettyPhoto[flash]" title="Flash">
+<img src="Full Thumbnial Path" alt="Flash content" /></a>
+`
+
+= QuickTime movies =
+`
+<a title="QuickTime movies" rel="prettyPhoto[movies]" href="http://trailers.apple.com/movies/universal/despicableme/despicableme-tlr1_r640s.mov?width=640&height=360">
+<img src="Full Thumbnial Path" alt="QuickTime movies" /></a>
+`
 
 
 == Frequently asked questions ==
