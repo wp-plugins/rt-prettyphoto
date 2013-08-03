@@ -303,7 +303,7 @@ function royal_prettyphoto_options_page() {
 		</tr>
 		
 		<tr valign="top">
-		<th scope="row"><label for="royal_prettyphoto_hide_photo_expand_button">Show Photo Expand Button</label></th>
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_expand_button">Hide Photo Expand Button</label></th>
 		<td><input name="royal_prettyphoto_plugin_options[hide_photo_expand_button]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_expand_button); ?> /></td>
 		</tr>
 
@@ -425,7 +425,7 @@ a.pp_next, a.pp_previous
 }
 
 
-.pp_expand
+div.pp_default .pp_expand
 {
 	<?php
 	if ( $royal_prettyphoto_hide_photo_Expand_button =='1' ) :
