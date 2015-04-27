@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Royal PrettyPhoto
-Plugin URI: http://wordpress.org/plugins/rt-prettyphoto
+Plugin URI: http://www.wordpress.org/plugins/rt-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
-Author: Mehdi Akram
-Author URI: http://shamokaldarpon.com
-Version: 1.0.2
+Author: SM Mehdi Akram
+Author URI: http://www.shamokaldarpon.com
+Version: 1.0.3
 */
 
 
@@ -15,8 +15,8 @@ function royal_prettyphoto_plugin_links($links, $file) {
 	$base = plugin_basename(__FILE__);
 	if ($file == $base) {
 		$links[] = '<a href="http://wordpress.org/plugins/rt-prettyphoto/installation/" target="_blank">' . __( 'Installation', 'rsb' ) . '</a>';
-		$links[] = '<a href="http://royaltechbd.com/" target="_blank">' . __( 'Royal Technologies', 'rsb' ) . '</a>';
-		$links[] = '<a href="http://shamokaldarpon.com/" target="_blank">' . __( 'Shamokal Darpon', 'rsb' ) . '</a>';
+		$links[] = '<a href="http://www.royaltechbd.com/" target="_blank">' . __( 'Royal Technologies', 'rsb' ) . '</a>';
+		$links[] = '<a href="http://www.shamokaldarpon.com/" target="_blank">' . __( 'Shamokal Darpon', 'rsb' ) . '</a>';
 	}
 	return $links;
 }
