@@ -5,7 +5,7 @@ Plugin URI: http://www.wordpress.org/plugins/rt-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
 Author: SM Mehdi Akram
 Author URI: http://www.shamokaldarpon.com
-Version: 1.1
+Version: 1.2
 */
 
 
@@ -422,11 +422,18 @@ a.pp_next, a.pp_previous
 }
 
 
-div.pp_default .pp_expand, a.pp_expand, div.facebook .pp_expand, div.light_square .pp_expand, div.dark_square .pp_expand, div.dark_rounded .pp_expand, div.light_rounded .pp_expand
+div.pp_default .pp_expand, 
+.pp_fade a.pp_expand, 
+a.pp_expand, 
+div.facebook .pp_expand, 
+div.light_square .pp_expand, 
+div.dark_square .pp_expand, 
+div.dark_rounded .pp_expand, 
+div.light_rounded .pp_expand
 {
 	<?php
 	if ( $royal_prettyphoto_hide_photo_expand_button =='1' ) :
-	  echo ' display: none !important;' . "\n";
+	  echo 'display: none !important;' . "\n";
 	else :
 	  
 	endif;
