@@ -5,7 +5,7 @@ Plugin URI: http://www.wordpress.org/plugins/rt-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
 Author: SM Mehdi Akram
 Author URI: http://www.shamokaldarpon.com
-Version: 1.0.3
+Version: 1.1
 */
 
 
@@ -283,6 +283,11 @@ function royal_prettyphoto_options_page() {
 		<tr valign="top">
 		<th scope="row"><label for="royal_prettyphoto_hide_photo_control">Hide Photo Control</label></th>
 		<td><input name="royal_prettyphoto_plugin_options[hide_photo_control]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_control); ?> /></td>
+		</tr>		
+		
+		<tr valign="top">
+		<th scope="row"><label for="royal_prettyphoto_hide_photo_expand_button">Hide Photo Expand Button</label></th>
+		<td><input name="royal_prettyphoto_plugin_options[hide_photo_expand_button]" type="checkbox" value="1" <?php checked( '1', $royal_prettyphoto_hide_photo_expand_button); ?> /></td>
 		</tr>
 		
 		<tr valign="top">
@@ -420,7 +425,7 @@ a.pp_next, a.pp_previous
 div.pp_default .pp_expand, a.pp_expand, div.facebook .pp_expand, div.light_square .pp_expand, div.dark_square .pp_expand, div.dark_rounded .pp_expand, div.light_rounded .pp_expand
 {
 	<?php
-	if ( $royal_prettyphoto_hide_photo_Expand_button =='1' ) :
+	if ( $royal_prettyphoto_hide_photo_expand_button =='1' ) :
 	  echo ' display: none !important;' . "\n";
 	else :
 	  
