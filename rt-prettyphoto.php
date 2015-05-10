@@ -5,7 +5,7 @@ Plugin URI: http://www.wordpress.org/plugins/rt-prettyphoto
 Description: This plugin will automatic add lightbox in wordpress post/page without disturbance.
 Author: SM Mehdi Akram
 Author URI: http://www.shamokaldarpon.com
-Version: 1.2
+Version: 1.3
 */
 
 
@@ -23,7 +23,6 @@ function royal_prettyphoto_plugin_links($links, $file) {
 
 
 add_filter('the_content', 'royal_prettyphoto_replace', 12);
-add_filter('get_comment_text', 'royal_prettyphoto_replace');
 function royal_prettyphoto_replace ($content)
 {   global $post;
 	$pattern = "/<a(.*?)href=('|\")([^>]*).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>(.*?)<\/a>/i";

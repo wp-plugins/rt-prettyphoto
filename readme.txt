@@ -3,8 +3,8 @@ Contributors: royaltechbd
 Donate link: http://royaltechbd.com/donate.html
 Tags: jQuery Lightbox, jQuery, jQuery PrettyPhoto, Lightbox, PrettyPhoto, royal, royaltechbd
 Requires at least: 3.3
-Tested up to: 4.2.1
-Stable tag: 1.2
+Tested up to: 4.2.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,6 +101,9 @@ No, Just add photo, It automatic add rel="".
 
 
 == Changelog ==
+= 1.3 =
+* xss fixed
+
 = 1.2 =
 * Bug fixed
 
@@ -115,6 +118,9 @@ No, Just add photo, It automatic add rel="".
 
 
 == Upgrade notice ==
+= 1.3 =
+* xss fixed
+
 = 1.2 =
 * Bug fixed
 
